@@ -29,19 +29,19 @@ The scripts save plain-text outputs such as:
 ### 1. Classification setup
 
 ```bash
-python -m bionnica.scripts.train_classification
+python -m bionnica.files.train_classification
 ```
 
 ### 2. VQA setup
 
 ```bash
-python -m bionnica.scripts.train_vqa
+python -m bionnica.files.train_vqa
 ```
 
-### 3. Synthetic charts and tables
+### 3. Charts and tables
 
 ```bash
-python -m bionnica.scripts.generate_synthetic_reports
+python -m bionnica.files.generate_reports
 ```
 
 ## Notes
