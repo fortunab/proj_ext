@@ -11,7 +11,7 @@ This refactor splits the original notebook into multiple Python files so the pro
 - `bionnica/utils/` — helpers for paths, reports, and plotting
 - `bionnica/scripts/train_classification.py` — HyperKvasir classification workflow
 - `bionnica/scripts/train_vqa.py` — Kvasir VQA workflow
-- `bionnica/scripts/generate_synthetic_reports.py` — synthetic charts, CSV, and TXT outputs
+  
 - `outputs/` — default folder for generated text reports and figures
 
 ## TXT outputs
@@ -22,27 +22,6 @@ The scripts save plain-text outputs such as:
 - training log
 - evaluation metrics
 - exact-match score
-- synthetic metrics report
-
-## Example usage
-
-### 1. Classification setup
-
-```bash
-python -m bionnica.files.train_classification
-```
-
-### 2. VQA setup
-
-```bash
-python -m bionnica.files.train_vqa
-```
-
-### 3. Charts and tables
-
-```bash
-python -m bionnica.files.generate_reports
-```
 
 ## Notes
 
