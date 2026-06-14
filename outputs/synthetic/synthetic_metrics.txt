@@ -1,6 +1,0 @@
-            Model  Accuracy  Sensitivity  Specificity  Precision  F1-score    AUC
-Bionnica Lite Enh    0.8925       0.8728       0.9042     0.8959    0.8842 0.8876
- EffNet-B0 + Head    0.8475       0.8209       0.8609     0.8528    0.8366 0.8407
-     EffNet-B0 FT    0.8990       0.8660       0.9154     0.9027    0.8839 0.8904
-    BLIP-VQA Base    0.8413       0.8365       0.8657     0.8454    0.8409 0.8429
-      BLIP-VQA FT    0.8766       0.8568       0.8940     0.8809    0.8687 0.8795
