@@ -1,0 +1,40 @@
+# Project configuration
+# Dataset is expected in:
+# data/train/<class_name>/*.jpg|png
+# data/test/<class_name>/*.jpg|png
+
+dataset_name: lukechugh/best-alzheimer-mri-dataset-99-accuracy
+
+data_dir: data
+train_dir: data/train
+test_dir: data/test
+
+model_path: outputs/models/alzheimers_efficientnet_model.keras
+reports_dir: outputs/reports
+figures_dir: outputs/figures
+
+image_size: [224, 224]
+batch_size: 32
+epochs: 59
+learning_rate: 0.001
+num_classes: 4
+
+fine_tune_from_layer: block5a_expand_activation
+
+early_stopping:
+  monitor: val_loss
+  min_delta: 0.01
+  patience: 11
+  restore_best_weights: true
+
+reduce_lr:
+  monitor: val_loss
+  factor: 0.2
+  patience: 5
+  min_lr: 0.000001
+
+eigencam:
+  images_per_class: 3
+  seed: 42
+  overlay_alpha_image: 0.55
+  overlay_alpha_heatmap: 0.45
